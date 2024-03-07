@@ -3,7 +3,7 @@ import Car from './10-car';
 export default class EVCar extends Car {
   constructor(brand, motor, color, range) {
     super(brand, motor, color);
-    this.range = range;
+    this._range = range; // Use underscore attribute version
   }
 
   get range() {
@@ -15,8 +15,8 @@ export default class EVCar extends Car {
   }
 
   cloneCar() {
-    const Species = super.constructor[Symbol.species];
-
-    return new Species();
+    const CarClass = super.constructor; // Get the constructor of the superclass (Car)
+    const clonedCar = new CarClass(this.brand, this.motor, this.color); // Instantiate a new Car object with the same attributes
+    return clonedCar;
   }
 }
