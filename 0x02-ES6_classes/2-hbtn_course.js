@@ -1,13 +1,4 @@
 export default class HolbertonCourse {
-  /**
-   * Creates a new HolbertonCourse class
-   *
-   * @param {String} name - The name of the course.
-   * @param {Number} length - How long the course is (in months).
-   * @param {String[]} students - The names of students in the course.
-   *
-   * Implement getters and setters for each attribute
-   */
   constructor(name, length, students) {
     this._name = name;
     this._length = length;
