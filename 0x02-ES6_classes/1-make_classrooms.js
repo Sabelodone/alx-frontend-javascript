@@ -1,4 +1,5 @@
-// File: 1-main.js
-import initializeRooms from './make_classrooms.js'; // Assuming make_classrooms.js is in the same directory
+import ClassRoom from './0-classroom.js';
 
-console.log(initializeRooms());
+const initializeRooms = () => [19, 20, 34].map(size => new ClassRoom(size));
+
+export default initializeRooms;
