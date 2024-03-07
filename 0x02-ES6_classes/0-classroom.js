@@ -1,6 +1,10 @@
 // File: ClassRoom.js
 export default class ClassRoom {
-    constructor(maxStudentsSize) {
-        this._maxStudentsSize = maxStudentsSize;
-    }
+  /**
+   * Implements a class named ClassRoom
+   * @param {Number} maxStudentsSize - maximum number of students in class
+   */
+  constructor(maxStudentsSize) {
+    this.maxStudentsSize = maxStudentsSize;
+  }
 }
